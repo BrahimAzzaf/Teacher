@@ -87,7 +87,7 @@ header .container .info ul li a:hover{
     padding: 25px ;
     backdrop-filter: blur(2px);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(411px, 1fr));
     grid-gap: 100px;
 
 }
@@ -131,7 +131,7 @@ header .container .info ul li a:hover{
     border: none;
 }
 .home .right{
-    margin-top: 37px;
+    margin-top: 10px;
     margin-left: 34px;
     padding-left:150px ;
     width: 300px;
