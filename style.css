@@ -21,6 +21,13 @@ body{
         background-image: none;
         background-color: #272758;
     }
+.about .container .professor-info p {
+    color: #fff !important;
+}
+    
+.about .container .professor-info h3{
+    color: #fff !important;
+}
 
 }
  /* Start header  */
