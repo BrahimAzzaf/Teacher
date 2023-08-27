@@ -74,21 +74,24 @@ header .container .info ul li a:hover{
 
  /* Start Home */
 .home{
-    background-image:url(../images/background.jpg);
+    background-image:url(./images/background.jpg);
     background-size: cover;
     text-align: center;
-    height: calc(100vh - 72px);
-    position: relative;
+/*     height: calc(100vh - 72px); */
+/*     position: relative; */
     padding-top: 100px;
     padding-bottom: 100px;
     overflow: hidden;
 }
 .home  .container{
-    padding: 25px ;
+    padding: 25px;
     backdrop-filter: blur(2px);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(411px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
     grid-gap: 100px;
+    margin-bottom: 116px;
+    z-index: 99;
+    padding-bottom: 66px;
 
 }
 .home .container .left{
@@ -159,12 +162,12 @@ header .container .info ul li a:hover{
     justify-content: center;
 }
 .courses .container {
-
-    padding-top: 50px;
-    padding-left: 20px;
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 50px;
+    grid-gap: 40px;
 }
 .courses .course{
     justify-self: center;
@@ -179,16 +182,16 @@ header .container .info ul li a:hover{
 
 
 .courses  .ml{
-    background-image: url(../images/ml.jpg);
+    background-image: url(./images/ml.jpg);
     background-size: cover;
 }
     
 .courses  .ai{    
-    background-image: url(../images/ai.jpg);
+    background-image: url(./images/ai.jpg);
     background-size: cover;
 }   
 .courses  .dl{ 
-    background-image: url(../images/dl.jpg);
+    background-image: url(./images/dl.jpg);
     background-size: cover;
 }
 
@@ -258,12 +261,12 @@ header .container .info ul li a:hover{
     justify-content: center;
 }
 .about .container{
-    display: grid;padding-top: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-gap: 50px;
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 49px;
     align-items: center;
     text-align: left;
-    flex-wrap: wrap;
 }
 .about .container img{
     width: 500px;
@@ -300,15 +303,14 @@ header .container .info ul li a:hover{
 
 
 .about .container .professor-info button{
-
     list-style: none;
     text-decoration: none;
     height: 56px;
-    margin: 20px 0;
-    padding: 7px 55px 10px 30px;
-    width: 600px;
+    margin: 9px 0;
+    padding: 8px 56px 10px 30px;
+    width: 557px;
     background-color: #333;
-    border-radius:30px;
+    border-radius: 30px;
     border: none;
     box-shadow: 0px 5px 15px #000;
     background-color: var(--main-color);
@@ -357,13 +359,13 @@ header .container .info ul li a:hover{
     justify-content: center;
 }
 .contact .row .image{
-    flex: 1 1 40rem;
+    flex: 1 1 38rem;
 }
 .contact .row .image img{
     width: 100%;
 }
 .contact .row form {
-    flex: 1 1 40rem;
+    flex: 0 0 38rem;
     margin-left: 10px;
 }
 .contact .row button{
@@ -431,6 +433,7 @@ footer{
     padding: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right:36px;
     background-color:#8787AC;
     background-image: linear-gradient(to right #263238  30%,#272758 100%);
     /* background-image: linear-gradient(to left #272758 10%, #8f8997 100%); */
