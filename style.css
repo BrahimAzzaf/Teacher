@@ -1,0 +1,499 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Start  variables */
+:root{
+    --main-color:#0E0E52;
+}
+/* End  variables */
+body{
+    transition: smooth;
+    
+    background-image: linear-gradient(to right, #272758 10%, #8f8997 100%);
+}
+ /* Start header  */
+header{
+    padding-top:0 ;
+
+    background-color: #dddddd3a;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    z-index: 9;
+    position: absolute;
+}
+header{    position: fixed;
+}
+header .container {
+    padding: 7px 15px 10px 10px;
+    /* background-color: none; */
+    backdrop-filter: blur(10px) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container img{
+    width: 120px;
+}
+.container .info ul {
+    display: flex;
+    
+}
+header .container .info ul li:hover{
+    transform: scale(1.3) ;
+    transition: 0.5s ease all;
+}
+header .container .info ul li a:hover{
+    
+    color: #fff;
+    background-color:var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.container .info ul li{
+    text-decoration: none;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.container .info ul li a{
+    
+    color: #fff;
+    border: 1px solid #fff;
+    width: 20px;
+    padding:5px 20px 5px  20px;
+    border-radius: 40px;;
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 5px;
+    margin-right: 2px;
+    text-decoration: none;
+}   
+ /* End header  */
+
+ /* Start Home */
+.home{
+    background-image:url(../images/background.jpg);
+    background-size: cover;
+    text-align: center;
+    height: calc(100vh - 72px);
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.home  .container{
+    padding: 25px ;
+    backdrop-filter: blur(2px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-gap: 100px;
+
+}
+.home .container .left{
+    background-color: #ddd;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-top: 100px;
+    width: 400px;
+    height: 300px;
+}
+.home .container .left H1{
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.home .container .left button a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+.home .container .left button:hover{
+    
+    color: #0E0E52;
+    background-color: #aaaaaa;
+    border: 1px solid transparent;
+    transform: scale(1.1) ;
+    transition: 0.5s ease all;
+    background-image: none;
+}
+.home .container .left button { 
+    margin-top: 15px;
+    width: 181px;
+    background-image: linear-gradient(to right, var(--main-color) 10%, #330867 80%);
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+}
+.home .right{
+    margin-top: 37px;
+    margin-left: 34px;
+    padding-left:150px ;
+    width: 300px;
+}
+.home .right img{
+    width: 385px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    
+}
+ /* End Home */
+/* Start Courses */
+.courses{
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.courses  h1{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+.courses .container {
+
+    padding-top: 50px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 50px;
+}
+.courses .course{
+    justify-self: center;
+    border: 1px solid black;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    height: 250px;
+    margin-bottom: 60px;
+    
+}
+
+
+.courses  .ml{
+    background-image: url(../images/ml.jpg);
+    background-size: cover;
+}
+    
+.courses  .ai{    
+    background-image: url(../images/ai.jpg);
+    background-size: cover;
+}   
+.courses  .dl{ 
+    background-image: url(../images/dl.jpg);
+    background-size: cover;
+}
+
+.courses .course h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.courses .course p{
+    text-align: start;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    backdrop-filter: blur(1px);
+}
+.courses .course h4:hover{
+    transform: scale(1.3) ;
+    transition: 0.5s ease all;
+}
+.courses .course h4{    
+    
+    margin-top: 15px;
+}
+.courses .course h4 a {
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: #fff;
+    padding:5px 10px 5px 10px;
+    border-radius: 20px;
+}
+.courses button a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+.courses button {
+    list-style: none;
+    padding: 20px;
+    border-radius: 30px;
+    width: 400px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.courses  button:hover{
+    transform: scale(.9) ;
+    transition: 0.5s ease all;
+    background-image: none;
+    background-color: #aaaaaa;
+    border: 1px solid var(--main-color);
+}
+/* End Course */
+/* Start About */
+.about{
+    text-align: center;
+}
+.about  span{
+    color: #fff;
+}
+.about  h1{
+    margin-top: 10px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    justify-content: center;
+}
+.about .container{
+    display: grid;padding-top: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 50px;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.about .container img{
+    width: 500px;
+    margin: 20px;
+}
+.about .container .professor-info{
+    margin: 20px;
+}
+
+.about .container .professor-info h1{
+    
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container .professor-info h3{
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 10px 10px 0;
+
+}
+
+
+.about .container .professor-info p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 10px 10px 0;
+    color: var(--main-color);
+}
+
+
+.about .container .professor-info button{
+
+    list-style: none;
+    text-decoration: none;
+    height: 56px;
+    margin: 20px 0;
+    padding: 7px 55px 10px 30px;
+    width: 600px;
+    background-color: #333;
+    border-radius:30px;
+    border: none;
+    box-shadow: 0px 5px 15px #000;
+    background-color: var(--main-color);
+    background-color: #272758;
+    margin-left: 20px;
+}
+.about .container .professor-info button a{
+    
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding: 5px;
+
+}
+.about .container .professor-info button:hover{        
+    color: var(--main-color);
+    background-color: #aaa;
+    transform: scale(1.0) ;
+    transition: 0.5s ease all;
+    background-image: none;
+    
+}
+
+
+/* End About */
+
+
+/* Start Contact   */
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.contact  span{
+    color: var(--main-color);
+}
+.contact  h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    justify-content: center;
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form {
+    flex: 1 1 40rem;
+    margin-left: 10px;
+}
+.contact .row button{
+    list-style: none;
+    text-decoration: none;
+    height: 56px;
+    margin: 20px 0;
+    padding: 7px 55px 10px 30px;
+    width: 500px;
+    background-color: #333;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 15px #000;
+    background-color: var(--main-color);
+    background-color: #272758;
+    margin-left: 105px;
+    color: #fff;
+    font-size: 37px;
+}
+.contact .row   button a{
+    color: #fff;;
+    text-decoration: none;
+    list-style: none;
+}
+.contact .row form  button:hover{
+        
+        color: var(--main-color);
+        background-color: #aaa;
+        transform: scale(1.1) ;
+        transition: 0.5s ease all;
+        background-image: none;
+}
+
+.contact .row form .box{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: #333;
+    padding:  1.4rem;
+    font-size: 18px;
+    color: #fff;
+}
+.contact .row form .message{
+    width: 100%;
+    height: 259px;
+    text-align: center;
+}
+.contact .row form span{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* End Contact   */
+
+
+
+
+
+
+
+/* Start Footer */
+footer{
+
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:#8787AC;
+    background-image: linear-gradient(to right #263238  30%,#272758 100%);
+    /* background-image: linear-gradient(to left #272758 10%, #8f8997 100%); */
+}
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+footer .container img{
+    width: 300px;
+}
+footer .container .foot{
+    display: flex;
+}
+footer .container .foot ul{
+    display: flex;
+    list-style: none;
+    
+}
+footer .container .foot ul li{
+    margin: 2px;
+    margin-top: 50px;
+    
+}
+footer .container .foot ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding:5px 10px 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    
+}
+footer .container .foot ul li a:hover{
+    color: var(--main-color);    
+    border: 1px solid var(--main-color);
+    transform: scale(1.9) ;
+    transition: 0.1s ease all;
+}
+footer .container .foot .links{
+    color: var(--main-color);
+    margin-top: 50px;
+    margin-left: 200px;
+    display: flex;
+}
+footer .container .foot .links i:hover{
+    color: var(--main-color);
+    transform: scale(1.2) ;
+    transition: 0.5s ease all;
+}
+footer .container .foot .links i{
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+}
+footer  p i{
+    color: red;
+}
+footer p{
+    margin-right: 140px;
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+}
+/* ENd Footer */
