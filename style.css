@@ -11,8 +11,17 @@
 /* End  variables */
 body{
     transition: smooth;
-    
     background-image: linear-gradient(to right, #272758 10%, #8f8997 100%);
+    background-size: contain;
+    width: fit-content;
+}
+
+@media (max-width:675px){
+    body{
+        background-image: none;
+        background-color: #272758;
+    }
+
 }
  /* Start header  */
 header{
